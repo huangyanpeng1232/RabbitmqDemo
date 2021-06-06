@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>消息队列测试</title>
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <script src="/jquery.min.js"></script>
+  <script src="/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 200px">
+      <input type="button" class="btn btn-info btn-lg goType" id="direct" value="direct">
+      <input type="button" class="btn btn-info btn-lg goType" id="fanout" value="fanout">
+      <input type="button" class="btn btn-info btn-lg goType" id="headers" value="headers">
+      <input type="button" class="btn btn-info btn-lg goType" id="topic" value="topic">
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  $('.goType').click(function(){
+    location.href = '/'+$(this).val();
+  })
+</script>
+</html>
